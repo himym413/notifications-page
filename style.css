@@ -194,7 +194,6 @@ footer a {
 
 @media only screen and (min-width: 800px) {
   html {
-    height: 100%;
     background-color: var(--very-light-blue);
     display: flex;
     justify-content: center;
