@@ -184,8 +184,7 @@ main {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   font-size: 11px;
   text-align: center;
 }
