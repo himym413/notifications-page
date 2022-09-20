@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-one: hsl(219, 85%, 26%);
+  --primary-two: hsl(1, 90%, 64%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-blue: hsl(210, 60%, 98%);
+  --light-blue-1: hsl(211, 68%, 94%);
+  --light-blue-2: hsl(205, 33%, 90%);
+  --blue: hsl(219, 14%, 63%);
+  --dark-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --font-size: 16px;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+  font-weight: 100 1000;
+  /* Weights: 500, 800 */
+}
+
+html,
+body {
+  font-family: "Plus Jakarta Sans";
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Utillites */
+p {
+  font-size: var(--font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 40px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.color-very-dark {
+  color: var(--very-dark-blue);
+}
+
+.background-light {
+  background-color: var(--very-light-blue);
+}
+
+/* Header */
+header {
+  width: 100%;
+  max-width: 38.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+header .notifications-number {
+  color: var(--white);
+  background-color: var(--primary-one);
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 25%;
+}
+
+header .mark-as-read {
+  font-weight: 500;
+  color: var(--blue);
+}
+
+header .mark-as-read:hover {
+  color: var(--primary-one);
+}
+
+/* Main */
+main {
+  max-width: 38.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.notification-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.notification-text {
+  color: var(--dark-blue);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.notification-user {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  margin-right: 0.25rem;
+}
+
+.notification-link {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-left: 0.25rem;
+}
+
+.notification-user:hover,
+.notification-link:hover {
+  color: var(--primary-one);
+}
+
+.notification-time {
+  display: block;
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.notification-message {
+  color: var(--dark-blue);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--light-blue-2);
+  border-radius: 5px;
+}
+
+.notification-message:hover {
+  cursor: pointer;
+  background-color: var(--light-blue-1);
+}
+
+.notification-picture {
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.notification-picture:hover {
+  cursor: pointer;
+  outline: 3px solid var(--very-light-blue);
+}
+
+.notification-new {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-two);
+  margin-left: 0.25rem;
+  transform: translateY(-0.05rem);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    height: 100%;
+    background-color: var(--very-light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+}
