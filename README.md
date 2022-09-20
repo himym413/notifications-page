@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/himym413/notifications-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/himym413/notifications-page)
+- Live Site URL: [Vercel](https://notifications-page-five.vercel.app/)
 
 ## My process
 
